@@ -8,20 +8,24 @@ class Window(QWidget):
         self.setFixedSize(400, 300)
         self.setWindowTitle("INTERFACE HOMME MACHINE")
 
+        self.icon =QIcon("frenchflag.png")
+
+        self.setWindowIcon(self.icon)
+
         #self.icon = QIcon(C:\Users\user\Desktop\fr-flag)
         #self.setWindowIcon(self.icon)
 
         self.layout = QVBoxLayout
 
-        self.label = QLabel
+        self.label = QLabel("hello world")
         self.label.setAlignement(Qt.AlignCenter)
 
-        self.bar = QProgressBar
+        self.bar = QProgressBar()
         self.bar.setValue(12)
 
-        self.textedit = QLineEdit
+        self.textedit = QLineEdit()
 
-        self.button = QPushButton
+        self.button = QPushButton("Click")
         self.button.setToolTip("QQ chose s'affiche normalement")
 
 

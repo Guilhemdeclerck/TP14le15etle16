@@ -12,8 +12,10 @@ class Window(QWidget):
         self.layout = QVBoxLayout()
 
         self.button = QPushButton("Changer mon texte !")
+        self.textedit = QTextEdit("LEnombre de clic va être afficher ici")
 
         self.layout.addWidget(self.button)
+        self.layout.addWidget(self.textedit)
 
         self.button.clicked.connect(self.buttonclicked)
 
@@ -22,6 +24,7 @@ class Window(QWidget):
       def  buttonclicked(self):
           self.i += 1
           self.button.setText("Clic"+ str(self.i))
+          self.textedit.setText("Clic"+ str(self.i))
           print("Clic"+str(self.i))
 
 if __name__ == "__main__":

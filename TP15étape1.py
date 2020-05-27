@@ -1,7 +1,7 @@
 from PySide2.QtWidgets import *
 from TP15étape2 import*
-from Partie2Etape1 import*
-from Partie2Etape2 import*
+from TP15Partie2Etape1 import*
+from TP15Partie2Etape2 import*
 
 class SQLClientWindow(QWidget):
       def __init__(self):

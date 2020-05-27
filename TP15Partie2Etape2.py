@@ -1,5 +1,5 @@
 from PySide2.QtWidgets import *
-from Partie2Etape1 import*
+from TP15Partie2Etape1 import*
 
 class ConfigurationDialog(QDialog):
       def __init__(self):
